@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:textSize="20sp"
+        android:textColor="#eff4f8"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="HOW MUCH WATER SHOULD YOU DRINK"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#24313c"
+        android:gravity="center"
+        android:id="@+id/litresperday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.0 L / DAY"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#07375f"
+        android:id="@+id/cups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="or 8 cups of water"
+        android:layout_below="@+id/litresperday"
+        android:layout_centerHorizontal="true" />
+    <SeekBar
+        android:id="@+id/seekbar_mass"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:max="160"
+        android:progress="40"
+        android:layout_centerInParent="true" />
+    <TextView android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#74ccf7"
+        android:id="@+id/mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="60 kg"
+        android:layout_below="@+id/seekbar_mass"
+        android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#bec8d4"
+        android:id="@+id/_forNN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="by Gewa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/forNN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="for Nika"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#74ccf7"
+        android:id="@+id/chooseMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Set your weight"
+        android:layout_above="@+id/seekbar_mass"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/drinking"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/drinking"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
